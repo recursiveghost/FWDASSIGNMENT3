@@ -1,0 +1,156 @@
+<!-- index.html - Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>🍳 Delicious Recipes</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipe1.html">Pasta Carbonara</a></li>
+                <li><a href="recipe2.html">Chicken Curry</a></li>
+                <li><a href="recipe3.html">Chocolate Cake</a></li>
+                <li><a href="recipe4.html">Greek Salad</a></li>
+                <li><a href="recipe5.html">Beef Tacos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Delicious Recipes</h2>
+                <p>Discover mouth-watering dishes from around the world. From quick weeknight dinners to impressive weekend feasts, find your next culinary adventure here.</p>
+                <a href="#featured" class="cta-button">Explore Recipes</a>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-section">
+            <h2 class="section-title">Featured Recipes</h2>
+            <div class="recipe-grid">
+                <article class="recipe-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400" alt="Pasta Carbonara">
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pasta Carbonara</h3>
+                        <p>Classic Italian pasta with eggs, cheese, and pancetta.</p>
+                        <div class="card-meta">
+                            <span>⏱ 25 mins</span>
+                            <a href="recipe1.html" class="view-btn">View Recipe</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400" alt="Chicken Curry">
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chicken Curry</h3>
+                        <p>Aromatic Indian curry with tender chicken pieces.</p>
+                        <div class="card-meta">
+                            <span>⏱ 45 mins</span>
+                            <a href="recipe2.html" class="view-btn">View Recipe</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Chocolate Cake">
+                        <span class="difficulty hard">Hard</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich, moist chocolate cake with ganache frosting.</p>
+                        <div class="card-meta">
+                            <span>⏱ 90 mins</span>
+                            <a href="recipe3.html" class="view-btn">View Recipe</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400" alt="Greek Salad">
+                        <span class="difficulty easy">Easy</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Greek Salad</h3>
+                        <p>Fresh Mediterranean salad with feta and olives.</p>
+                        <div class="card-meta">
+                            <span>⏱ 15 mins</span>
+                            <a href="recipe4.html" class="view-btn">View Recipe</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400" alt="Beef Tacos">
+                        <span class="difficulty medium">Medium</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Beef Tacos</h3>
+                        <p>Authentic Mexican street tacos with seasoned beef.</p>
+                        <div class="card-meta">
+                            <span>⏱ 35 mins</span>
+                            <a href="recipe5.html" class="view-btn">View Recipe</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2 class="section-title">Recipe Categories</h2>
+            <div class="category-grid">
+                <div class="category-card veg">
+                    <h3>🥗 Vegetarian</h3>
+                    <p>Plant-based deliciousness</p>
+                </div>
+                <div class="category-card non-veg">
+                    <h3>🍖 Non-Vegetarian</h3>
+                    <p>Meat lovers' paradise</p>
+                </div>
+                <div class="category-card dessert">
+                    <h3>🍰 Desserts</h3>
+                    <p>Sweet treats & bakes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <h2 class="section-title">Find Your Perfect Recipe</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search recipes..." disabled>
+                <button disabled>🔍 Search</button>
+            </div>
+            <p class="search-note">*Search functionality requires JavaScript (UI demonstration only)</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Delicious Recipes. Created by [Your Name]</p>
+            <p>Made with ❤️ for food lovers everywhere</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butter Chicken — Delicious Recipes</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .recipe-page-hero { --hero-img: url('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=1400&q=80'); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🍽 Delicious Recipes</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipe1.html" class="active">Butter Chicken</a></li>
+        <li><a href="recipe2.html">Paneer Tikka</a></li>
+        <li><a href="recipe3.html">Lava Cake</a></li>
+        <li><a href="recipe4.html">Dal Makhani</a></li>
+        <li><a href="recipe5.html">Carbonara</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="recipe-page-hero" role="banner">
+    <span class="card-badge badge-nonveg" style="position:static;display:inline-block;margin-bottom:1rem;">Non-Veg</span>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:900;margin-bottom:0.5rem;">Butter Chicken</h1>
+    <p style="color:rgba(255,255,255,0.85);font-size:1.05rem;max-width:480px;margin:0 auto 1.5rem;">India's favourite — tender chicken in a luscious tomato-butter-cream sauce.</p>
+    <div class="recipe-meta-hero">
+      <span class="meta-chip"><span class="icon">⏱</span> 45 min</span>
+      <span class="meta-chip"><span class="icon">🍽</span> Serves 4</span>
+      <span class="meta-chip"><span class="icon">📊</span> Medium</span>
+      <span class="meta-chip"><span class="icon">🌍</span> North Indian</span>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <a href="index.html" class="back-link">← Back to All Recipes</a>
+
+    <div class="recipe-content">
+
+      <!-- Aside: Image + Info + Ingredients -->
+      <aside class="recipe-aside">
+
+        <div class="recipe-dish-img">
+          <img
+            src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=700&q=80"
+            alt="Bowl of Butter Chicken"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="info-box">
+          <h2 class="info-box-title">📋 Recipe Info</h2>
+          <div class="info-row">
+            <span class="info-key">Prep Time</span>
+            <span class="info-val">15 min</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Cook Time</span>
+            <span class="info-val">30 min</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Total Time</span>
+            <span class="info-val">45 min</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Servings</span>
+            <span class="info-val">4 people</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Difficulty</span>
+            <span class="info-val"><span class="difficulty-badge diff-medium">Medium</span></span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Category</span>
+            <span class="info-val tag-nonveg">Non-Veg</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">Calories</span>
+            <span class="info-val">~380 kcal</span>
+          </div>
+        </div>
+
+        <div class="ingredients-box">
+          <h2 class="info-box-title">🛒 Ingredients</h2>
+          <ul class="ingredients-list">
+            <li class="ingredient-item">500g boneless chicken, cubed</li>
+            <li class="ingredient-item">1 cup plain yogurt</li>
+            <li class="ingredient-item">2 tsp tandoori masala</li>
+            <li class="ingredient-item">1 tsp red chilli powder</li>
+            <li class="ingredient-item">2 tbsp butter</li>
+            <li class="ingredient-item">1 tbsp oil</li>
+            <li class="ingredient-item">1 large onion, chopped</li>
+            <li class="ingredient-item">4 ripe tomatoes, blended</li>
+            <li class="ingredient-item">1 tbsp ginger-garlic paste</li>
+            <li class="ingredient-item">1 tsp garam masala</li>
+            <li class="ingredient-item">1 tsp cumin seeds</li>
+            <li class="ingredient-item">½ cup heavy cream</li>
+            <li class="ingredient-item">1 tbsp sugar or honey</li>
+            <li class="ingredient-item">Salt to taste</li>
+            <li class="ingredient-item">Fresh coriander, to garnish</li>
+          </ul>
+        </div>
+
+      </aside>
+
+      <!-- Instructions -->
+      <section class="instructions-box animate-fade-in-up" aria-labelledby="instr-heading">
+        <h2 class="info-box-title" id="instr-heading" style="font-size:1.4rem;margin-bottom:0.5rem;">👨‍🍳 Step-by-Step Instructions</h2>
+        <p style="color:var(--color-muted);font-size:0.9rem;margin-bottom:1rem;">Follow these steps carefully for restaurant-quality Butter Chicken at home.</p>
+
+        <ol class="steps-list">
+          <li class="step-item">
+            <span class="step-num">1</span>
+            <p class="step-text"><strong>Marinate the chicken:</strong> In a large bowl, mix yogurt, tandoori masala, red chilli powder, and a pinch of salt. Add chicken cubes, coat well, and marinate for at least 30 minutes (overnight is best).</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">2</span>
+            <p class="step-text"><strong>Grill or pan-sear:</strong> Heat 1 tbsp oil in a pan on high heat. Add marinated chicken pieces and sear for 4–5 minutes per side until charred and cooked through. Set aside.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">3</span>
+            <p class="step-text"><strong>Make the base:</strong> In the same pan, melt butter. Add cumin seeds and let them splutter. Add chopped onions and sauté until golden brown, about 8–10 minutes.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">4</span>
+            <p class="step-text"><strong>Add aromatics:</strong> Stir in ginger-garlic paste and cook for 2 minutes until the raw smell disappears. Add blended tomatoes and cook on medium heat for 10 minutes, stirring occasionally.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">5</span>
+            <p class="step-text"><strong>Spice it up:</strong> Add garam masala, red chilli powder (to taste), and sugar. Stir well and cook for 3 more minutes. Season with salt.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">6</span>
+            <p class="step-text"><strong>Cream it:</strong> Lower the heat. Pour in heavy cream and mix gently. Simmer for 5 minutes — do not boil after adding cream.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">7</span>
+            <p class="step-text"><strong>Add chicken &amp; finish:</strong> Add the seared chicken pieces to the sauce. Simmer for 5–7 minutes so the chicken absorbs the gravy flavours.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num">8</span>
+            <p class="step-text"><strong>Serve:</strong> Garnish with fresh coriander and a swirl of cream. Serve hot with naan, roti, or steamed basmati rice. Enjoy!</p>
+          </li>
+        </ol>
+
+        <div style="background:var(--color-light);border-left:4px solid var(--color-primary);padding:1rem 1.2rem;border-radius:0 8px 8px 0;margin-top:2rem;">
+          <strong style="color:var(--color-primary);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;">💡 Pro Tip</strong>
+          <p style="color:var(--color-muted);font-size:0.9rem;margin-top:0.3rem;">For a silkier sauce, blend the cooked tomato-onion base before adding cream. This makes it restaurant-smooth.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Related Recipes -->
+    <section class="related-section" aria-labelledby="related-heading">
+      <div class="section-header" style="margin-bottom:2rem;">
+        <span class="section-eyebrow">You Might Also Like</span>
+        <h2 class="section-title" id="related-heading">More Recipes</h2>
+      </div>
+      <div class="recipes-grid" style="grid-template-columns:repeat(auto-fill,minmax(240px,1fr));">
+        <article class="recipe-card">
+          <div class="card-img-wrap" style="height:160px;">
+            <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=400&q=80" alt="Dal Makhani" loading="lazy" />
+            <span class="card-badge badge-veg">Veg</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title" style="font-size:1.05rem;">Dal Makhani</h3>
+            <a href="recipe4.html" class="card-link">View →</a>
+          </div>
+        </article>
+        <article class="recipe-card">
+          <div class="card-img-wrap" style="height:160px;">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80" alt="Paneer Tikka" loading="lazy" />
+            <span class="card-badge badge-veg">Veg</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title" style="font-size:1.05rem;">Paneer Tikka</h3>
+            <a href="recipe2.html" class="card-link">View →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name">🍽 Delicious Recipes</span>
+        <p>A curated collection of delicious recipes from around the world. Made with love for food enthusiasts everywhere.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Recipes</h4>
+        <ul>
+          <li><a href="recipe1.html">→ Butter Chicken</a></li>
+          <li><a href="recipe2.html">→ Paneer Tikka</a></li>
+          <li><a href="recipe3.html">→ Lava Cake</a></li>
+          <li><a href="recipe4.html">→ Dal Makhani</a></li>
+          <li><a href="recipe5.html">→ Carbonara</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">→ Home</a></li>
+          <li><a href="about.html">→ About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Delicious Recipes. Made by <strong style="color:#E8B86D">Vidit</strong>.</span>
+      <span>HTML + CSS Assignment — DLT</span>
+    </div>
+  </footer>
+
+</body>
+</html>

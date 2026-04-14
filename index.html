@@ -1,156 +1,230 @@
-<!-- index.html - Home Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Recipes - Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Recipes — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>🍳 Delicious Recipes</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="recipe1.html">Pasta Carbonara</a></li>
-                <li><a href="recipe2.html">Chicken Curry</a></li>
-                <li><a href="recipe3.html">Chocolate Cake</a></li>
-                <li><a href="recipe4.html">Greek Salad</a></li>
-                <li><a href="recipe5.html">Beef Tacos</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Welcome to Delicious Recipes</h2>
-                <p>Discover mouth-watering dishes from around the world. From quick weeknight dinners to impressive weekend feasts, find your next culinary adventure here.</p>
-                <a href="#featured" class="cta-button">Explore Recipes</a>
-            </div>
-        </section>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🍽 Delicious Recipes</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="recipe1.html">Butter Chicken</a></li>
+        <li><a href="recipe2.html">Paneer Tikka</a></li>
+        <li><a href="recipe3.html">Lava Cake</a></li>
+        <li><a href="recipe4.html">Dal Makhani</a></li>
+        <li><a href="recipe5.html">Carbonara</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <section id="featured" class="featured-section">
-            <h2 class="section-title">Featured Recipes</h2>
-            <div class="recipe-grid">
-                <article class="recipe-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400" alt="Pasta Carbonara">
-                        <span class="difficulty easy">Easy</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Pasta Carbonara</h3>
-                        <p>Classic Italian pasta with eggs, cheese, and pancetta.</p>
-                        <div class="card-meta">
-                            <span>⏱ 25 mins</span>
-                            <a href="recipe1.html" class="view-btn">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
+  <!-- ===== HERO ===== -->
+  <header class="hero" role="banner">
+    <p class="hero-eyebrow">Welcome to</p>
+    <h1>Cook with <em>Passion</em>,<br>Eat with Joy</h1>
+    <p class="hero-sub">Explore a curated collection of mouth-watering recipes from around the world — simple ingredients, extraordinary flavours.</p>
+    <a href="#recipes" class="hero-cta">Browse Recipes ↓</a>
+  </header>
 
-                <article class="recipe-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400" alt="Chicken Curry">
-                        <span class="difficulty medium">Medium</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Chicken Curry</h3>
-                        <p>Aromatic Indian curry with tender chicken pieces.</p>
-                        <div class="card-meta">
-                            <span>⏱ 45 mins</span>
-                            <a href="recipe2.html" class="view-btn">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
+  <!-- ===== MAIN ===== -->
+  <main>
 
-                <article class="recipe-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Chocolate Cake">
-                        <span class="difficulty hard">Hard</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Chocolate Cake</h3>
-                        <p>Rich, moist chocolate cake with ganache frosting.</p>
-                        <div class="card-meta">
-                            <span>⏱ 90 mins</span>
-                            <a href="recipe3.html" class="view-btn">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400" alt="Greek Salad">
-                        <span class="difficulty easy">Easy</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Greek Salad</h3>
-                        <p>Fresh Mediterranean salad with feta and olives.</p>
-                        <div class="card-meta">
-                            <span>⏱ 15 mins</span>
-                            <a href="recipe4.html" class="view-btn">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="recipe-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400" alt="Beef Tacos">
-                        <span class="difficulty medium">Medium</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Beef Tacos</h3>
-                        <p>Authentic Mexican street tacos with seasoned beef.</p>
-                        <div class="card-meta">
-                            <span>⏱ 35 mins</span>
-                            <a href="recipe5.html" class="view-btn">View Recipe</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="categories">
-            <h2 class="section-title">Recipe Categories</h2>
-            <div class="category-grid">
-                <div class="category-card veg">
-                    <h3>🥗 Vegetarian</h3>
-                    <p>Plant-based deliciousness</p>
-                </div>
-                <div class="category-card non-veg">
-                    <h3>🍖 Non-Vegetarian</h3>
-                    <p>Meat lovers' paradise</p>
-                </div>
-                <div class="category-card dessert">
-                    <h3>🍰 Desserts</h3>
-                    <p>Sweet treats & bakes</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="search-section">
-            <h2 class="section-title">Find Your Perfect Recipe</h2>
-            <div class="search-bar">
-                <input type="text" placeholder="Search recipes..." disabled>
-                <button disabled>🔍 Search</button>
-            </div>
-            <p class="search-note">*Search functionality requires JavaScript (UI demonstration only)</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Delicious Recipes. Created by [Your Name]</p>
-            <p>Made with ❤️ for food lovers everywhere</p>
+    <!-- Intro Section -->
+    <section class="intro-section animate-fade-in-up" aria-labelledby="intro-heading">
+      <div class="intro-text">
+        <h2 id="intro-heading">Food is the <em>language</em> everyone speaks.</h2>
+        <p>Whether you're a beginner stepping into the kitchen for the first time or a seasoned home cook looking for fresh inspiration, you've come to the right place.</p>
+        <p>Our collection features recipes tested with care — from classic Indian comfort food to global favourites, with clear instructions and honest prep times.</p>
+        <div class="intro-stats">
+          <div class="stat-item">
+            <div class="stat-number shimmer-text">5+</div>
+            <div class="stat-label">Recipes</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number shimmer-text">3</div>
+            <div class="stat-label">Categories</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number shimmer-text">∞</div>
+            <div class="stat-label">Flavours</div>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="intro-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=700&q=80"
+          alt="Variety of colourful dishes on a table"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- Search Bar (UI Only — Bonus) -->
+    <section class="search-section" aria-label="Search recipes">
+      <span class="search-label">🔎 Find a Recipe:</span>
+      <div class="search-input-wrap">
+        <input type="text" placeholder="e.g. Butter Chicken, Pasta, Dal..." aria-label="Search recipes" />
+      </div>
+      <button class="search-btn" type="button">Search</button>
+    </section>
+
+    <!-- Category Filters (UI Only — Bonus) -->
+    <section aria-label="Filter by category">
+      <div class="category-filters">
+        <span class="category-label">Filter:</span>
+        <button class="cat-btn active" type="button">All</button>
+        <button class="cat-btn veg" type="button">🥦 Veg</button>
+        <button class="cat-btn nonveg" type="button">🍗 Non-Veg</button>
+        <button class="cat-btn dessert" type="button">🍰 Desserts</button>
+      </div>
+    </section>
+
+    <!-- Featured Recipes -->
+    <section id="recipes" aria-labelledby="recipes-heading">
+      <div class="section-header">
+        <span class="section-eyebrow">Our Collection</span>
+        <h2 class="section-title" id="recipes-heading">Featured Recipes</h2>
+        <div class="section-divider"><span>✦</span></div>
+      </div>
+
+      <div class="recipes-grid">
+
+        <!-- Card 1: Butter Chicken -->
+        <article class="recipe-card delay-1" aria-label="Butter Chicken recipe">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80"
+              alt="Creamy Butter Chicken in a bowl"
+              loading="lazy"
+            />
+            <span class="card-badge badge-nonveg">Non-Veg</span>
+            <span class="card-time-tag">⏱ 45 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-difficulty">⭐ Medium</span>
+            <h3 class="card-title">Butter Chicken</h3>
+            <p class="card-desc">Tender chicken simmered in a rich, velvety tomato-cream sauce. India's most beloved recipe.</p>
+            <a href="recipe1.html" class="card-link">View Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 2: Paneer Tikka -->
+        <article class="recipe-card delay-2" aria-label="Paneer Tikka recipe">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&q=80"
+              alt="Grilled Paneer Tikka on skewers"
+              loading="lazy"
+            />
+            <span class="card-badge badge-veg">Veg</span>
+            <span class="card-time-tag">⏱ 40 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-difficulty">⭐ Easy</span>
+            <h3 class="card-title">Paneer Tikka Masala</h3>
+            <p class="card-desc">Smoky, spiced paneer cubes in a tangy masala marinade — the ultimate vegetarian starter.</p>
+            <a href="recipe2.html" class="card-link">View Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 3: Chocolate Lava Cake -->
+        <article class="recipe-card delay-3" aria-label="Chocolate Lava Cake recipe">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80"
+              alt="Molten Chocolate Lava Cake with ice cream"
+              loading="lazy"
+            />
+            <span class="card-badge badge-dessert">Dessert</span>
+            <span class="card-time-tag">⏱ 25 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-difficulty">⭐ Medium</span>
+            <h3 class="card-title">Chocolate Lava Cake</h3>
+            <p class="card-desc">Warm chocolate cakes with a gooey, molten centre. Pure indulgence in every bite.</p>
+            <a href="recipe3.html" class="card-link">View Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 4: Dal Makhani -->
+        <article class="recipe-card delay-4" aria-label="Dal Makhani recipe">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=600&q=80"
+              alt="Creamy Dal Makhani in a bowl"
+              loading="lazy"
+            />
+            <span class="card-badge badge-veg">Veg</span>
+            <span class="card-time-tag">⏱ 90 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-difficulty">⭐⭐ Medium</span>
+            <h3 class="card-title">Dal Makhani</h3>
+            <p class="card-desc">Slow-cooked black lentils in buttery, spiced gravy — the soul of Punjabi cooking.</p>
+            <a href="recipe4.html" class="card-link">View Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 5: Pasta Carbonara -->
+        <article class="recipe-card delay-1" aria-label="Pasta Carbonara recipe">
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80"
+              alt="Creamy Pasta Carbonara in a pan"
+              loading="lazy"
+            />
+            <span class="card-badge badge-nonveg">Non-Veg</span>
+            <span class="card-time-tag">⏱ 20 min</span>
+          </div>
+          <div class="card-body">
+            <span class="card-difficulty">⭐ Medium</span>
+            <h3 class="card-title">Pasta Carbonara</h3>
+            <p class="card-desc">Silky egg-and-cheese sauce with crispy pancetta — a Roman classic done right.</p>
+            <a href="recipe5.html" class="card-link">View Recipe →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name">🍽 Delicious Recipes</span>
+        <p>A curated collection of delicious recipes from around the world. Made with love for food enthusiasts everywhere.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Recipes</h4>
+        <ul>
+          <li><a href="recipe1.html">→ Butter Chicken</a></li>
+          <li><a href="recipe2.html">→ Paneer Tikka</a></li>
+          <li><a href="recipe3.html">→ Lava Cake</a></li>
+          <li><a href="recipe4.html">→ Dal Makhani</a></li>
+          <li><a href="recipe5.html">→ Carbonara</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">→ Home</a></li>
+          <li><a href="about.html">→ About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Delicious Recipes. Made by <strong style="color:#E8B86D">Vidit</strong>.</span>
+      <span>HTML + CSS Assignment — DLT</span>
+    </div>
+  </footer>
+
 </body>
 </html>

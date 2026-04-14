@@ -1,12 +1,5 @@
-/* =============================================
-   COOKING RECIPES WEBSITE — styles.css
-   Author: Vidit
-   ============================================= */
-
-/* --- Google Fonts Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@700&display=swap');
 
-/* --- CSS Custom Properties --- */
 :root {
   --color-primary:    #C8782A;
   --color-primary-dk: #A05C1A;
@@ -34,7 +27,6 @@
   --transition: all 0.3s ease;
 }
 
-/* --- Reset & Base --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -56,7 +48,6 @@ a { text-decoration: none; color: inherit; }
 
 ul { list-style: none; }
 
-/* --- Animations --- */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -92,9 +83,6 @@ ul { list-style: none; }
 .delay-3 { animation-delay: 0.3s; }
 .delay-4 { animation-delay: 0.4s; }
 
-/* =============================================
-   NAVIGATION
-   ============================================= */
 .site-nav {
   background: var(--color-dark);
   padding: 0 2rem;
@@ -154,9 +142,6 @@ ul { list-style: none; }
   border-color: var(--color-primary);
 }
 
-/* =============================================
-   HERO / BANNER
-   ============================================= */
 .hero {
   background:
     linear-gradient(135deg, rgba(44,24,16,0.82) 0%, rgba(200,120,42,0.55) 100%),
@@ -230,9 +215,6 @@ ul { list-style: none; }
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
-/* =============================================
-   MAIN CONTENT WRAPPER
-   ============================================= */
 main {
   flex: 1;
   max-width: 1200px;
@@ -241,9 +223,6 @@ main {
   padding: 3rem 2rem 4rem;
 }
 
-/* =============================================
-   SECTION TITLES
-   ============================================= */
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -291,9 +270,6 @@ main {
   font-size: 1.1rem;
 }
 
-/* =============================================
-   SEARCH BAR (UI Only)
-   ============================================= */
 .search-section {
   background: var(--color-white);
   border: 1px solid var(--color-border);
@@ -371,9 +347,6 @@ main {
   box-shadow: 0 4px 12px rgba(200,120,42,0.35);
 }
 
-/* =============================================
-   CATEGORY FILTERS (Bonus - UI Only)
-   ============================================= */
 .category-filters {
   display: flex;
   gap: 0.75rem;
@@ -416,9 +389,6 @@ main {
 .cat-btn.nonveg:hover, .cat-btn.nonveg.active { border-color: var(--color-nonveg); background: var(--color-nonveg); }
 .cat-btn.dessert:hover, .cat-btn.dessert.active { border-color: var(--color-dessert); background: var(--color-dessert); }
 
-/* =============================================
-   RECIPE CARDS GRID
-   ============================================= */
 .recipes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -543,9 +513,6 @@ main {
   gap: 0.65rem;
 }
 
-/* =============================================
-   INTRO SECTION (Homepage)
-   ============================================= */
 .intro-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -634,9 +601,6 @@ main {
   opacity: 0.5;
 }
 
-/* =============================================
-   RECIPE PAGE STYLES
-   ============================================= */
 .recipe-page-hero {
   background:
     linear-gradient(to bottom, rgba(44,24,16,0.55), rgba(44,24,16,0.85)),
@@ -678,7 +642,6 @@ main {
 
 .meta-chip .icon { margin-right: 0.3rem; }
 
-/* Recipe Content */
 .recipe-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -704,7 +667,6 @@ main {
   object-fit: cover;
 }
 
-/* Info Box */
 .info-box {
   background: var(--color-white);
   border: 1px solid var(--color-border);
@@ -750,7 +712,6 @@ main {
   font-weight: 700;
 }
 
-/* Ingredients */
 .ingredients-box {
   background: var(--color-white);
   border: 1px solid var(--color-border);
@@ -791,7 +752,6 @@ main {
   flex-shrink: 0;
 }
 
-/* Instructions */
 .instructions-box {
   background: var(--color-white);
   border: 1px solid var(--color-border);
@@ -847,7 +807,6 @@ main {
   padding-top: 0.5rem;
 }
 
-/* Difficulty Badge in Recipe Page */
 .difficulty-badge {
   display: inline-block;
   padding: 0.3rem 1rem;
@@ -862,7 +821,6 @@ main {
 .diff-medium { background: #FFF8E1; color: #F57F17; border: 1px solid #FFE082; }
 .diff-hard   { background: #FCE4EC; color: #C62828; border: 1px solid #FFAB91; }
 
-/* Back link */
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -888,16 +846,12 @@ main {
   transform: translateX(-3px);
 }
 
-/* Related Recipes */
 .related-section {
   margin-top: 3rem;
   padding-top: 3rem;
   border-top: 2px dashed var(--color-border);
 }
 
-/* =============================================
-   ABOUT PAGE
-   ============================================= */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -939,9 +893,6 @@ main {
   font-size: 0.93rem;
 }
 
-/* =============================================
-   CONTACT / FORM PAGE (No JS Submit)
-   ============================================= */
 .contact-form-wrap {
   max-width: 640px;
   margin: 0 auto;
@@ -1014,9 +965,6 @@ main {
   animation: none;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
 .site-footer {
   background: var(--color-dark);
   color: #B89A8A;
@@ -1097,9 +1045,6 @@ main {
 
 .footer-bottom a:hover { color: var(--color-white); }
 
-/* =============================================
-   UTILITIES
-   ============================================= */
 .tag-veg     { color: var(--color-veg);     font-weight: 700; }
 .tag-nonveg  { color: var(--color-nonveg);  font-weight: 700; }
 .tag-dessert { color: var(--color-dessert); font-weight: 700; }
@@ -1113,9 +1058,6 @@ main {
   animation: shimmer 3s linear infinite;
 }
 
-/* =============================================
-   RESPONSIVE — MEDIA QUERIES
-   ============================================= */
 @media (max-width: 900px) {
   .intro-section {
     grid-template-columns: 1fr;
